@@ -67,6 +67,8 @@ BOARD_VENDOR_USE_AKMD := akm8973
 
 BOARD_EGL_CFG := device/htc/bravo/egl.cfg
 
+BOARD_USE_FROYO_LIBCAMERA := true
+
 # # cat /proc/mtd
 # dev:    size   erasesize  name
 # mtd0: 000a0000 00020000 "misc"
