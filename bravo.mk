@@ -27,13 +27,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=240 \
     rild.libpath=/system/lib/libhtc_ril.so \
-    ro.ril.enable.a52=0 \
-    ro.ril.enable.a53=1 \
-    ro.ril.enable.dtm = 1 \
-    ro.ril.gprsclass = 12 \
-    ro.ril.hsdpa.category=8 \
-    ro.ril.hsupa.category=5 \
-    ro.ril.hsxpa=2 \
     wifi.interface=eth0 \
     wifi.supplicant_scan_interval=15
 
@@ -41,14 +34,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # 0 => WCDMA preferred.
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.default_network=0
-
-# Set default_france.acdb to audio_ctl driver if the ro.cid is HTC__203
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.ril.enable.prl.recognition=1
-
-# AGPS otpions
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.ril.def.agps.mode=2
 
 # The OpenGL ES API level that is natively supported by this device.
 # This is a 16.16 fixed point number
